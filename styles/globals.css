@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.input-text {
+  @apply block mt-1 w-60 px-3 py-2 bg-white border-slate-300 rounded-full text-sm shadow-sm placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-sky-500;
+}
+.loader {
+  @apply border-gray-200 rounded-full border-4 ease-linear h-10 w-10;
+  border-top-color: #363ce0;
+  animation: spinner 1.2s linear infinite;
+  -webkit-animation: spinner 1.2s linear infinite;
+}
+@keyframes spinner {
+  100% {
+    transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+  }
+}
